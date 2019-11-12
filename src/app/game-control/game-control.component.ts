@@ -8,18 +8,18 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 export class GameControlComponent implements OnInit {
 @Output() ClickOnStart = new EventEmitter<number>();
 @Output() ClickOnStop = new EventEmitter<number>();
-message= "child to parent";
+message= 5;
   constructor() { }
 
   ngOnInit() {
   }
 
-  doClickOnStart(){
-this.sendToParent.emit(this.message);
+  startClicked(){
+this.ClickOnStart.emit(this.message);
     
 
   }
-  doClickOnStop(){
+  stopClicked(){
 
   }
 
