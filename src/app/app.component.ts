@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  sendTochild;
+  numberGenerated;
+  numbers=[];
+  
+
+
+received(message:any){
+ 
+this.numberGenerated = message;
+// (message % 2 === 0)? this.sendTochild = "even" :  this.sendTochild = "odd";
+ //console.log(message);
+}
+
 }

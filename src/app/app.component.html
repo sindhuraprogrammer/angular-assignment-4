@@ -6,4 +6,11 @@
 
 
 
-<app-game-control (ClickOnStart)="getMessage($event)"></app-game-control>
+<app-game-control (ClickOnStart)="received($event)"> 
+  
+ </app-game-control>
+ <p>{{numberGenerated}}</p>
+
+<!--
+<app-even *ngIf="sendToChild=='even'"[takingFromParent]='numberGenerated'></app-even>
+<app-odd [takingFromParent]='sendToChild'></app-odd> -->
