@@ -8,13 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
-  
   numbers=[];
-  
-
-
-received(message:number){
- this.numbers.push(message);
-}
-
+  received(message:number){
+     this.numbers.push(message);
+  }
 }
